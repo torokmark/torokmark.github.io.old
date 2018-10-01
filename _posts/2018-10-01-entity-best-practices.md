@@ -12,13 +12,13 @@ categories: posts
     - `@Column` and `@JoinColumn` should contain `nullable = false`
 * Entity should implement `Persistable<IDTYPE>` interface 
     - Create own interface with default implementation:
-     ```java
-     public interface Identifiable extends Persistable<Long> { 
-         default isNew() { 
-             return getId() == null; 
-         }
+ ```java
+ public interface Identifiable extends Persistable<Long> { 
+     default isNew() { 
+         return getId() == null; 
      }
-     ```
+ }
+ ```
 * All ids should be boxed like `Long`, `Integer`, `String`, etc. (Implementing `Persistable<IDTYPE>` will ensure this.)
 * Do not use *lombok* for entities (hibernate), generated code interfere with each other
 * Do not reimplement `equals` and `hashCode` for entities
