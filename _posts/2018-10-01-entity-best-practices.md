@@ -2,7 +2,7 @@
 layout: post
 title:  "Best practices to write an Entity in Spring/Hibernate"
 date:   2018-10-01 
-categories: jekyll update
+categories: posts
 ---
 
 * Every entity has to have a *public default contstructor*
