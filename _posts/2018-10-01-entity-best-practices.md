@@ -17,7 +17,7 @@ categories: jekyll update
              default isNew() { 
                  return getId() == null; 
              }
-         }`
+         }
          ```
 * All ids should be boxed like `Long`, `Integer`, `String`, etc. (Implementing `Persistable<IDTYPE>` will ensure this.)
 * Do not use *lombok* for entities (hibernate), generated code interfere with each other
