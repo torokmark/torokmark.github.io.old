@@ -164,7 +164,7 @@ class CarBuilderDirector:
 ```python
 if __name__ == '__main__':
     car = CarBuilderDirector().build()
-    print(car)                             # => [wheels: 8, seats: 4, color: Red]
+    print(car)      # => [wheels: 8, seats: 4, color: Red]
 ```
 
 ## The Builder with Builders
