@@ -54,9 +54,19 @@ class PersonBuilder:
 
 ```python
 if __name__ == '__main__':
-    print(PersonBuilder().name('jancsi').age(12).phone('11223344').age(18).build()) # => [name=jancsi; age=18; phone=11223344]
-    print(PersonBuilder().age(12).phone('11223344').age(18).build())                # => [name=John Doe; age=18; phone=11223344]
-    print(PersonBuilder().build())                                                  # => [name=John Doe; age=99; phone=000]
+    print(PersonBuilder()
+        .name('jancsi')
+        .age(12)
+        .phone('11223344')
+        .age(18)
+        .build())            # => [name=jancsi; age=18; phone=11223344]
+    print(PersonBuilder()
+        .age(12)
+        .phone('11223344')
+        .age(18)
+        .build())            # => [name=John Doe; age=18; phone=11223344]
+    print(PersonBuilder()
+        .build())            # => [name=John Doe; age=99; phone=000]
 ```
 
 ## The One with Named Parameters
