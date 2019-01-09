@@ -288,10 +288,10 @@ class HeaderBuilder:
 ```python
 class BodyBuilder:
     def __init__(self):
-        self._body = {}
+        self._body = [] 
 
-    def add(self, key, value):
-        self._body[key] = value
+    def add(self, value):
+        self._body.append(value)
         return self
 
     def header(self):
