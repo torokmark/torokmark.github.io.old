@@ -334,7 +334,7 @@ if __name__ == "__main__":
                 .add('Access-Control-Allow-Origin', '*')
                 .add('Accept', '*')
             .body()
-                .add('body', json.dumps('hello', default=str))
+                .add(json.dumps('hello', default=str))
             .status(204))
 
     print(ResponseBuilder()
@@ -342,7 +342,7 @@ if __name__ == "__main__":
                 .add('Age', '12')
                 .add('Accept', '*')
             .body()
-                .add('body', 'message comes here!')
+                .add('message comes here!')
             .header()
                 .add('Access-Control-Allow-Origin', '*')
             .build()) # status is default to 200
