@@ -6,8 +6,10 @@ All implementations are found in this repo: [https://github.com/torokmark/builde
 
 ## The Simple One
 
+
 **Task**: Let us implement a `Person` with the following fields like `name`, `age`, `phone`.   
 **Approach**: Make a `PersonBuilder` with methods according to the fields in `Person`, plus a `build` which returns an object of `Person`.
+
 
 ```python
 class Person:
@@ -69,12 +71,16 @@ if __name__ == '__main__':
         .build())            # => [name=John Doe; age=99; phone=000]
 ```
 
+
 ## The One with Named Parameters
+
 
 Though builder is very flexible, it is inevitable to have some default values for those fields that are not set during the building.
 
+
 **Task**: How to do this without builder?   
 **Approach**: Let us use default values in constructor parameter list.
+
 
 ```python
 class Person:
