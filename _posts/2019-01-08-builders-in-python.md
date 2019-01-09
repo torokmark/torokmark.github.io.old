@@ -347,3 +347,5 @@ if __name__ == "__main__":
                 .add('Access-Control-Allow-Origin', '*')
             .build()) # status is default to 200
 ```
+
+All these approaches are found in [https://github.com/torokmark/builders_in_python](https://github.com/torokmark/builders_in_python)
