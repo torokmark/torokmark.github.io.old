@@ -1,4 +1,7 @@
 title: Blog
 description: Thoughts about coding and everything
 
+plugins:
+  - jekyll-feed
+
 theme: jekyll-theme-midnight
